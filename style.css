@@ -1,0 +1,97 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+button{
+    background-color: #cecece;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #e0e0e0;
+}
+
+.choice-grid{
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: space-between;
+    justify-self: space-between;
+    width: auto;
+    height: auto;  
+   }
+   
+.choice-grid div{
+    margin-bottom: 20px;
+    width: calc(32.5% - 20px);
+    padding: 10px;
+    display: flex;
+    border: 1px solid #dcdcdc;
+    flex-direction: column;
+   }
+   
+.choice-grid div img{
+       width: 100%;
+       cursor: pointer;
+   }
+   
+.checkbox{
+       width: 20px;
+       height: 20px;
+   }
+   
+.checked{
+    background-color: #cfe3ff;
+}
+
+.hidden{
+    display: none;
+}
+   
+.notSelected{
+    background-color: #f4f4f4; ;
+   }
+   
+
+.question-name {
+    background-image: url("wallpaper.jpg");
+    background-position: center;
+    background-size: cover;
+}
+   
+#result{
+    margin-top: 40px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#results p{
+    margin: 18px 0px;
+}
+.unchecked{
+    opacity: 0.6;
+   }
+   
+
+
+@media(max-width: 500px){
+    .choice-grid div{
+         width: calc(49% - 20px);
+    }
+    
+    section.question-name h1{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 700px){
+    article{
+        width: 95%;
+    }
+    
+    header div span{
+        display: none;
+    }
+    
+    body{
+        width: 100%;
+    }
+}
